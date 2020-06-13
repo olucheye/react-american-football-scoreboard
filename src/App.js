@@ -9,26 +9,6 @@ function App() {
   const [homeScore, setHomeScore] = useState(32);
   const [awayScore, setAwayScore] = useState(32);
 
-  //using switch case to loop through value
-//   function calcScore(foo){
-//     switch (foo) {
-//         case homeTouch:
-//             return setHomeScore(homeScore + 7)
-//             break
-//         case homeField:
-//             return setHomeScore(homeScore + 3)
-//             break
-//         case awayTouch:
-//             return setAwayScore(awayScore + 7)
-//             break
-//         case awayField:
-//             return setAwayScore(awayScore + 3);
-//         default:
-//             break;
-//     }
-//   }
-
-
   //changes state for home TouchDown
   const homeTouch = () =>{
       return setHomeScore(homeScore + 7);
@@ -47,7 +27,7 @@ function App() {
   //change state for awau Field Goal
   const awayField = () =>{
     return setAwayScore(awayScore + 3);
-  }  
+  }
 
   return (
     <div className="container">
